@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8"></meta>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+  </head>
+
+  <body>
+    <table style="width:100%">
+      <tr>
+        <td>
+          <div class="container">
+            <div id="tv-logo">🐔 ДебатТВ</div>
+            <div id="countdown" class="overlay timer">
+               {{text}}
+            </div>
+            <div id="full_name">
+              {{text}}
+            </div>
+            <div id="profession">
+              {{text}}
+            </div>
+
+            <video width="800" src="video.mov" type="video/mov" controls
+            </video>
+          </div>
+        </td>
+        <td>
+          <div id="candidates">
+            <h1>
+              Speakers
+            </h1>
+            <ol>
+              <candidate-item
+                v-for="item in candidates"
+                v-bind:candidate="item"
+                v-bind:key="item.id"
+              ></candidate-item>
+              </ol>
+              <button class="button_give_a_word" v-on:click="stopAll()">STOP ALL</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

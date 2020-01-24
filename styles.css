@@ -1,0 +1,64 @@
+body {
+  font-size: 20px;
+  font-family: 'Monaco'
+}
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+
+}
+
+.button_give_a_word {
+  font-size: 14px;
+  font-family: 'Monaco'
+
+}
+
+.timer {
+  font-family: 'Press Start 2P';
+  font-size: 20px;
+  top:450;
+  left:670;
+  z-index:1;
+}
+
+#full_name {
+  font-family: 'Press Start 2P';
+  font-size: 18px;
+  position:absolute;
+  top:440;
+  left:50;
+  z-index:1;
+}
+
+#overlay-bg {
+  position:fixed;
+  top: 440;
+  width: 800;
+  height: 160px;
+  background: green;
+  color: red;
+}
+
+#profession {
+  font-family: 'Press Start 2P';
+  font-size: 12px;
+  position:absolute;
+  top:460;
+  left:50;
+  z-index:1;
+}
+
+#tv-logo {
+  font-family: 'Press Start 2P';
+  font-size: 22px;
+  position:absolute;
+  top:15;
+  left:580;
+  z-index:1;
+}
